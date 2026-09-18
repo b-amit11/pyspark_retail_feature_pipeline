@@ -66,7 +66,7 @@ def clean_customers(customers: DataFrame) -> DataFrame:
         customers
         .filter(F.col("customer_id").isNotNull())
         .dropDuplicates(["customer_id"])
-        .withColumn("age", cleaned_age)
+        .withColumn("age", cleaned_age.cast("integer"))
         .withColumn(
             "fashion_news_frequency",
             cleaned_news_frequency,
@@ -78,6 +78,8 @@ def clean_customers(customers: DataFrame) -> DataFrame:
                 "club_member_status": "UNKNOWN",
             }
         )
+        .withColumn("FN", F.col("FN").cast("integer"))
+        .withColumn("Active", F.col("Active").cast("integer"))
         .withColumnRenamed("FN", "fn")
         .withColumnRenamed("Active", "active")
     )

@@ -21,11 +21,11 @@ TRANSACTIONS_SCHEMA = StructType(
 CUSTOMERS_SCHEMA = StructType(
     [
         StructField("customer_id", StringType(), nullable=False),
-        StructField("FN", IntegerType(), nullable=True),
-        StructField("Active", IntegerType(), nullable=True),
+       StructField("FN", DoubleType(), nullable=True),
+       StructField("Active", DoubleType(), nullable=True),
         StructField("club_member_status", StringType(), nullable=True),
         StructField("fashion_news_frequency", StringType(), nullable=True),
-        StructField("age", IntegerType(), nullable=True),
+        StructField("age", DoubleType(), nullable=True),
         StructField("postal_code", StringType(), nullable=True),
     ]
 )
