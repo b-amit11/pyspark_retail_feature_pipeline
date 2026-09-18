@@ -216,3 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Local data and generated pipeline output
+data/*
+!data/sample/
+!data/sample/*.csv
+output/*
+!output/.gitkeep
+
+# Spark-generated files
+spark-warehouse/
+metastore_db/
+derby.log
+

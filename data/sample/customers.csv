@@ -1,0 +1,6 @@
+customer_id,FN,Active,club_member_status,fashion_news_frequency,age,postal_code
+C001,1,1,ACTIVE,Regularly,24,POST001
+C002,,,ACTIVE,NONE,31,POST002
+C003,1,1,PRE-CREATE,Regularly,120,POST003
+C004,1,1,ACTIVE,Monthly,45,POST004
+C005,,,LEFT CLUB,NONE,,POST005
