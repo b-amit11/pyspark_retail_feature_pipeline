@@ -1,6 +1,6 @@
 # PySpark Retail Feature Pipeline
 
-![PySpark Tests](https://github.com/b-amit11/pyspark_retail_feature_pipeline/actions/workflows/tests.yml/badge.svg)
+[![PySpark Tests](https://github.com/b-amit11/pyspark_retail_feature_pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/b-amit11/pyspark_retail_feature_pipeline/actions/workflows/tests.yml)
 
 A production-style PySpark ETL pipeline that converts large retail datasets into validated, ML-ready customer, product, and transaction feature tables.
 
